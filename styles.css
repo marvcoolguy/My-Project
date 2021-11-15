@@ -126,10 +126,9 @@ main {
 /* Mobile View */
 @media screen and (max-width: 900px) {
 	body {
-		width: 100%;
-		height: 100%;
-		display: unset;
-		justify-content: unset;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
 		align-items: unset;
 		font-family: "Spartan", sans-serif;
 		background-image: url("images/bg-pattern-top-desktop.svg"),
@@ -137,74 +136,81 @@ main {
 		background-position: top left, bottom right;
 		background-repeat: no-repeat;
 	}
-
 	.container {
 		height: 100%;
-		width: 100%;
+		width: 300px;
 	}
-
 	header {
+		padding-top: 10px;
 		display: unset;
 		justify-content: unset;
 	}
-
 	.text h1 {
-		width: 80%;
-		color: hsl(300, 43%, 22%);
-		margin: 20px auto 15px;
+		margin: auto;
+		width: 98%;
 		text-align: center;
+		color: hsl(300, 43%, 22%);
+		margin-bottom: 20px;
 		font-weight: 700;
+		font-size: 38px;
 	}
-
 	.text p {
-		width: 85%;
+		margin: auto;
+		text-align: center;
+		width: 80%;
 		color: hsl(303, 10%, 53%);
 		font-size: 15px;
-		margin-bottom: 50px;
-		text-align: center;
-		margin: auto;
 	}
-
-	.ratings {
-		width: 350px;
-		padding: 10px 0;
-		margin: 10px auto;
+	.ratings-group {
 		display: flex;
-		border-radius: 5px;
-		font-size: 16px;
-		background-color: hsl(300, 24%, 96%);
-		justify-content: space-around;
+		text-align: center;
+		flex-direction: column;
+		margin-top: 30px;
+		margin-bottom: 50px;
 	}
-
-	.ratings-1 {
-		margin-left: auto;
-	}
-
-	.ratings-2 {
-		margin-left: auto;
-		font-size: 14px;
-	}
-
-	main {
+	
+	.ratings {
+		margin: auto;
+		width: 85%;
+		padding: 15px 0;
+		color: hsl(300, 43%, 22%);
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		background-color: hsl(300, 24%, 96%);
 	}
-
+	
+	/* .ratings-1 {
+		margin-left: unset;
+	}
+	
+	.ratings-2 {
+		margin-left: unset;
+	} */
+	main {
+		display: unset;
+		justify-content: unset;
+	}
+	
 	.card {
-		background-color: hsl(300, 43%, 22%);
+		background-color: hsl(300, 19%, 34%);
 		border-radius: 5px;
 		color: hsl(0, 0%, 100%);
-		width: 330px;
-		height: 200px;
-		margin-bottom: 15px;
+		margin: auto;
+		width: 300px;
+		height: 230px;
 	}
-
+	
 	.card-1 {
 		margin-top: unset;
 	}
-
+	
 	.card-2 {
 		margin-top: unset;
 	}
+	#text {
+		text-align: center;
+	}
+	
 }
